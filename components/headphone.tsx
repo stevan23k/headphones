@@ -26,7 +26,6 @@ function centerAndMaterial(obj: Group) {
     }
   });
 
-  // Convert from 3ds Max Z-up to Three.js Y-up
   obj.rotateX(-Math.PI / 2);
   obj.rotateY(Math.PI / 2);
 
