@@ -1,9 +1,13 @@
 import Hero from "@/components/hero/hero";
+import Line from "@/components/line";
 
 export default function Home() {
   return (
     <div>
-      <Hero />
+      <Line />
+      <div>
+        <Hero />
+      </div>
     </div>
   );
 }
