@@ -1,8 +1,9 @@
 import Scene from "@/components/scene";
 import Phase02 from "@/components/phase02";
-import Hero from "@/components/hero/hero";
+import Hero from "@/components/hero";
 import Line from "@/components/line";
 import Phase03 from "@/components/phase03";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
@@ -20,6 +21,9 @@ export default function Home() {
       <div>
         <Phase03 />
       </div>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }

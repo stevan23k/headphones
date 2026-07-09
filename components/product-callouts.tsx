@@ -96,11 +96,21 @@ function CalloutItem({ def, opacity }: { def: CalloutDef; opacity: number }) {
 }
 
 function getCalloutOpacity(progress: number): number {
-  const CALLOUTS_START = 0.3;
-  const CALLOUTS_END = 0.42;
+  const FADE_IN_START = 0.2;
+  const FADE_IN_END = 0.3;
+  const FADE_OUT_START = 0.5;
+  const FADE_OUT_END = 0.6;
 
-  if (progress < CALLOUTS_START) return 0;
-  if (progress >= CALLOUTS_END) return 1;
+  if (progress < FADE_IN_START) return 0;
+  if (progress >= FADE_OUT_END) return 0;
 
-  return (progress - CALLOUTS_START) / (CALLOUTS_END - CALLOUTS_START);
+  if (progress <= FADE_IN_END) {
+    return (progress - FADE_IN_START) / (FADE_IN_END - FADE_IN_START);
+  }
+
+  if (progress >= FADE_OUT_START) {
+    return 1 - (progress - FADE_OUT_START) / (FADE_OUT_END - FADE_OUT_START);
+  }
+
+  return 1;
 }
