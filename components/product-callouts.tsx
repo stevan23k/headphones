@@ -96,9 +96,8 @@ function CalloutItem({ def, opacity }: { def: CalloutDef; opacity: number }) {
 }
 
 function getCalloutOpacity(progress: number): number {
-  const PHASE_2_START = 0;
-  const CALLOUTS_START = PHASE_2_START + (1 - PHASE_2_START) * 0.7;
-  const CALLOUTS_END = 1;
+  const CALLOUTS_START = 0.3;
+  const CALLOUTS_END = 0.42;
 
   if (progress < CALLOUTS_START) return 0;
   if (progress >= CALLOUTS_END) return 1;

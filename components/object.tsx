@@ -21,7 +21,8 @@ function ModelScene({
   const groupRef = useRef<Group>(null);
 
   const START_X = 10;
-  const PHASE_1_END = 0.2;
+  const PHASE_1_END = 0.0;
+  const PHASE_2_END = 0.45;
 
   useFrame(() => {
     if (!groupRef.current) return;
@@ -31,8 +32,11 @@ function ModelScene({
     if (progress < PHASE_1_END) {
       groupRef.current.position.x = START_X;
       groupRef.current.rotation.y = 0;
+    } else if (progress >= PHASE_2_END) {
+      groupRef.current.position.x = 0;
+      groupRef.current.rotation.y = Math.PI * 2;
     } else {
-      const t = (progress - PHASE_1_END) / (1 - PHASE_1_END);
+      const t = (progress - PHASE_1_END) / (PHASE_2_END - PHASE_1_END);
       groupRef.current.position.x = START_X * (1 - t);
       groupRef.current.rotation.y = t * Math.PI * 2;
     }
@@ -52,7 +56,7 @@ export default function Scene3D({
   scrollProgressRef: { current: number };
 }) {
   const mounted = useSyncExternalStore(
-    () => () => {},
+    () => () => { },
     () => true,
     () => false,
   );

@@ -1,7 +1,8 @@
 import Scene from "@/components/scene";
-import Description_01 from "@/components/description-01";
+import Phase02 from "@/components/phase02";
 import Hero from "@/components/hero/hero";
 import Line from "@/components/line";
+import Phase03 from "@/components/phase03";
 
 export default function Home() {
   return (
@@ -14,7 +15,10 @@ export default function Home() {
         <Hero />
       </div>
       <div className="relative z-10">
-        <Description_01 />
+        <Phase02 />
+      </div>
+      <div>
+        <Phase03 />
       </div>
     </div>
   );
