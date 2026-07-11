@@ -2,7 +2,6 @@
 
 import { setConsoleFunction } from "three";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
 import { useSyncExternalStore, useRef, type MutableRefObject } from "react";
 import { type Group } from "three";
 import ModeloObj from "./headphone";
@@ -19,7 +18,6 @@ function ModelScene({
   scrollProgressRef: MutableRefObject<number>;
 }) {
   const groupRef = useRef<Group>(null);
-  const controlsRef = useRef<any>(null);
 
   const START_X = 10;
   const PHASE_1_END = 0.0;
@@ -59,9 +57,6 @@ function ModelScene({
       groupRef.current.rotation.z = CARD_TILT;
       groupRef.current.scale.set(CARD_SCALE, CARD_SCALE, CARD_SCALE);
 
-      if (controlsRef.current?.enabled) {
-        controlsRef.current.enabled = false;
-      }
     } else {
       groupRef.current.scale.set(0, 0, 0);
     }
@@ -73,7 +68,6 @@ function ModelScene({
         <ModeloObj />
         <ProductCallouts scrollProgressRef={scrollProgressRef} />
       </group>
-      <OrbitControls ref={controlsRef} enableZoom={false} />
     </>
   );
 }

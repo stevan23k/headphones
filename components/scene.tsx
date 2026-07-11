@@ -12,7 +12,7 @@ export default function Scene() {
   });
 
   return (
-    <div className="pointer-events-none fixed inset-0 z-0">
+    <div className="pointer-events-none fixed inset-0 -z-50">
       <Scene3D scrollProgressRef={scrollProgressRef} />
     </div>
   );
