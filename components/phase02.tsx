@@ -46,29 +46,29 @@ export default function Phase02() {
   }, []);
 
   return (
-    <div ref={containerRef} className="h-screen w-full p-24">
+    <div ref={containerRef} className="h-screen w-full p-6 sm:p-12 md:p-16 lg:p-20 xl:p-24">
       <div className="h-full">
         <div ref={block1Ref} className="flex justify-center">
-          <p className="text-[80px] w-160 flex text-center mix-blend-difference ">
+          <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[80px] w-full sm:w-80 md:w-100 lg:w-120 xl:w-160 flex text-center mix-blend-difference">
             The best material
           </p>
         </div>
-        <div ref={block2Ref} className="flex flex-col mt-40 gap-4">
-          <p className="text-[50px] w-150 mix-blend-difference ">
+        <div ref={block2Ref} className="flex flex-col mt-12 sm:mt-20 md:mt-32 lg:mt-40 gap-3 sm:gap-4">
+          <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[50px] w-full sm:w-80 md:w-100 lg:w-120 xl:w-150 mix-blend-difference">
             Crafted from aerospace-grade aluminum and genuine leather
           </p>
-          <p className="text-[30px] mix-blend-difference ">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-[30px] mix-blend-difference">
             Designed to last, built to be felt.
           </p>
         </div>
         <div
           ref={block3Ref}
-          className="flex flex-col mt-20 gap-4 w-full justify-end items-end"
+          className="flex flex-col mt-8 sm:mt-12 md:mt-16 lg:mt-20 gap-3 sm:gap-4 w-full justify-end items-end"
         >
-          <p className="text-[50px] text-end mix-blend-difference">
+          <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[50px] text-end mix-blend-difference">
             Silent world, pure sound.
           </p>
-          <p className="text-[30px] text-end w-140 mix-blend-difference">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-[30px] text-end w-full sm:w-80 md:w-100 lg:w-120 xl:w-140 mix-blend-difference">
             Active noise cancellation that lets you choose what you hear.
           </p>
         </div>
