@@ -23,7 +23,7 @@ function ModelScene({
 
   const START_X = 10;
   const PHASE_1_END = 0.0;
-  const PHASE_2_END = 0.3;
+  const PHASE_2_END = 0.35;
   const ANIMATION_END = 0.64;
   const CARD_SCALE = 0.4;
   const CARD_TILT = 0.15;
