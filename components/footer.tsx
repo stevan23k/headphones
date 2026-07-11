@@ -59,12 +59,20 @@ export default function Footer() {
       <div className="bg-black text-white h-0 flex flex-row px-20 gap-20">
         <ul className={`text-[30px] ${pixelify.className}`}>
           <li>
-            <a href="" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://github.com/stevan23k/headphones.git"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Source code
             </a>
           </li>
           <li>
-            <a href="" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://github.com/stevan23k"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Github
             </a>
           </li>
