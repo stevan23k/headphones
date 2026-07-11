@@ -36,7 +36,6 @@ export default function Phase02() {
               start: "top 75%",
               end: "top 20%",
               scrub: 1.5,
-              markers: true,
             },
           },
         );
