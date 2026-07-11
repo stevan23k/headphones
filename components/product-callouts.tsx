@@ -85,7 +85,7 @@ function CalloutItem({ def, opacity }: { def: CalloutDef; opacity: number }) {
         }}
       >
         <div className="flex flex-col gap-1 whitespace-nowrap mix-blend-normal">
-          <span className="text-sm font-semibold tracking-wide text-neutral-800">
+          <span className="text-lg font-semibold tracking-wide text-neutral-800">
             {def.label}
           </span>
           <span className="text-xs text-neutral-500">{def.description}</span>
