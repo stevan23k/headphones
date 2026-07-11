@@ -3,7 +3,7 @@ export default function Hero() {
     <section className="relative z-10 flex h-screen w-full items-center">
       <div className="flex flex-col gap-12 p-6 sm:gap-16 sm:p-8 md:gap-24 md:p-12 lg:gap-32 lg:p-16 xl:gap-40 xl:p-20 2xl:gap-48 2xl:p-24">
         <div>
-          <p className="w-80 text-3xl text-base/30 sm:w-80 sm:text-4xl md:w-80 md:text-5xl lg:w-120 lg:text-6xl xl:w-230 xl:text-[120px] 2xl:w-260 2xl:text-[130px]">
+          <p className="w-80 text-2xl sm:w-80 sm:text-4xl md:w-80 md:text-5xl lg:w-120 lg:text-6xl xl:w-230 xl:text-[120px] 2xl:w-260 2xl:text-[130px]">
             everything is designed but few things are designed well.
           </p>
         </div>
