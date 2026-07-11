@@ -24,11 +24,11 @@ function ModelScene({
   const START_X = 10;
   const PHASE_1_END = 0.0;
   const PHASE_2_END = 0.36;
-  const ANIMATION_END = 0.64;
+  const ANIMATION_END = 0.61;
   const CARD_SCALE = 0.4;
   const CARD_TILT = 0.15;
   const end = 0.65;
-  const HIDE_AT = 0.65;
+  const HIDE_AT = 0.61;
 
   useFrame(() => {
     if (!groupRef.current) return;
