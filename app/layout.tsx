@@ -32,7 +32,10 @@ export default function RootLayout({
   return (
     <SmoothScroll>
       <html lang="en" className={`${rubik.className} h-full antialiased`}>
-        <body className="min-h-full flex flex-col">{children}</body>
+        <body className="min-h-full flex flex-col">
+          <div className="fixed mix-blend-difference inset-0 z-0 bg-[radial-gradient(#334155_1px,transparent_1px)] [background-size:60px_60px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)]" />
+          <div className="z-10">{children}</div>
+        </body>
       </html>
     </SmoothScroll>
   );
